@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de Muertos</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #eccea1, #dd700a);
+            font-family: "Times New Roman", serif;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 30px;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: -10px;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+        }
+        nav button {
+            color: rgb(10, 7, 7);
+            background-color: #fc9815;
+            border: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: #f34d1b;
+        }
+        section {
+            padding: 40px;
+        }
+        p {
+            text-align: justify;
+            max-width: 900px;
+            margin: 20px auto;
+            line-height: 1.6em;
+        }
+        img {
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        #catrina img {
+            width: 250px;
+        }
+        #diamuertos img {
+            width: 300px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Día de Muertos</h1>
+        <h2>Tradiciones Mexicanas</h2>
+    </header>
+
+    <nav>
+        <button onclick="mostrarSeccion('catrina')">Origen de la Catrina</button>
+        <button onclick="mostrarSeccion('diamuertos')">Día de Muertos</button>
+    </nav>
+
+    <!-- Sección 1: Origen de la Catrina -->
+    <section id="catrina">
+        <h2>Origen de la Catrina</h2>
+        <p><strong>La Catrina</strong> tiene su origen en el artista mexicano <strong>José Guadalupe Posada</strong>,
+        quien la creó alrededor de 1910 como "La Calavera Garbancera" como una crítica social a las clases altas de la época.
+        El personaje evolucionó cuando <strong>Diego Rivera</strong> lo pintó en su mural 
+        "<em>Sueño de una tarde dominical en la Alameda Central</em>", dándole el atuendo elegante que conocemos hoy 
+        y el nombre de "La Catrina".</p>
+
+        <p>La figura de la Catrina representa una poderosa metáfora sobre la muerte y la igualdad social. 
+        Posada quiso mostrar que, sin importar el dinero o la posición, todos somos iguales ante la muerte. 
+        Su esqueleto, ataviado con un sombrero europeo y ropa elegante, ridiculiza las aspiraciones de las clases altas mexicanas
+        que intentaban imitar las costumbres europeas de la época por encima de sus raíces indígenas.</p>
+
+        <p>Con el paso de los años, <strong>La Catrina</strong> se convirtió en un símbolo central del <strong>Día de Muertos</strong>. 
+        Hoy en día, su imagen aparece en desfiles, altares, artesanías, maquillaje y vestimentas tradicionales. 
+        Es considerada una representación artística de la muerte con elegancia y respeto, un recordatorio de que la muerte no es 
+        el fin, sino una continuación del ciclo de la vida, celebrada con color, música y tradición en todo México.</p>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyKGze7NfC3YwvFpf9NliDTJIyN1qySVNISx2ZxK0rxKYAoh5vfEaUfXBEBq1myI1r52E&usqp=CAU" alt="La Catrina">
+    </section>
+
+    <!-- Sección 2: Día de Muertos -->
+    <section id="diamuertos" style="display:none;">
+        <h2>Día de Muertos</h2>
+        <p><strong>El Día de Muertos</strong> es una de las tradiciones más emblemáticas de México. 
+        Se celebra los días <strong>1 y 2 de noviembre</strong> para honrar la memoria de los seres queridos que han fallecido.
+        En esta festividad, se colocan <strong>ofrendas</strong> con flores de cempasúchil, velas, fotografías y alimentos
+        que solían gustar a los difuntos. Es una mezcla de costumbres indígenas y creencias católicas,
+        lo que la convierte en una celebración única en el mundo.</p>
+
+        <div>
+            <img src="https://jdr.mx/wp-content/uploads/2021/10/ofrenda_dia_muertos.jpg" alt="Ofrenda Día de Muertos">
+            <img src="https://i0.wp.com/parquelamexicana.mx/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-10-a-las-6.20.11%E2%80%AFp.m.png?fit=2054%2C1368&ssl=1" alt="Flores de cempasúchil">
+            <img src="https://www.guiasdeviajeanaya.es/imagenes/images/noticias/Dia-muertos-mexico/fiesta-muertos-desfile.jpg" alt="Calaveras de azúcar">
+        </div>
+    </section>
+
+    <script>
+        function mostrarSeccion(id) {
+            // Oculta todas las secciones
+            document.getElementById('catrina').style.display = 'none';
+            document.getElementById('diamuertos').style.display = 'none';
+            // Muestra la seleccionada
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
