@@ -70,8 +70,8 @@
     </header>
 
     <nav>
-        <button onclick="mostrarSeccion('catrina')">Origen de la Catrina</button>
-        <button onclick="mostrarSeccion('diamuertos')">Día de Muertos</button>
+        <button>Origen de la Catrina</button>
+        <button>Día de Muertos</button>
     </nav>
 
     <!-- Sección 1: Origen de la Catrina -->
@@ -97,7 +97,7 @@
     </section>
 
     <!-- Sección 2: Día de Muertos -->
-    <section id="diamuertos" style="display:none;">
+    <section id="diamuertos">
         <h2>Día de Muertos</h2>
         <p><strong>El Día de Muertos</strong> es una de las tradiciones más emblemáticas de México. 
         Se celebra los días <strong>1 y 2 de noviembre</strong> para honrar la memoria de los seres queridos que han fallecido.
@@ -111,15 +111,5 @@
             <img src="https://www.guiasdeviajeanaya.es/imagenes/images/noticias/Dia-muertos-mexico/fiesta-muertos-desfile.jpg" alt="Calaveras de azúcar">
         </div>
     </section>
-
-    <script>
-        function mostrarSeccion(id) {
-            // Oculta todas las secciones
-            document.getElementById('catrina').style.display = 'none';
-            document.getElementById('diamuertos').style.display = 'none';
-            // Muestra la seleccionada
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
 </body>
 </html>
